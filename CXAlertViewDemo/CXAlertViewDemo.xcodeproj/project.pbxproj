@@ -187,6 +187,11 @@
 				CLASSPREFIX = CX;
 				LastUpgradeCheck = 0460;
 				ORGANIZATIONNAME = ChrisXu;
+				TargetAttributes = {
+					835710DF17E18FDF004C8155 = {
+						DevelopmentTeam = NVAFMDWZJC;
+					};
+				};
 			};
 			buildConfigurationList = 835710DB17E18FDF004C8155 /* Build configuration list for PBXProject "CXAlertViewDemo" */;
 			compatibilityVersion = "Xcode 3.2";
@@ -320,10 +325,12 @@
 		8357110417E18FDF004C8155 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = NVAFMDWZJC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CXAlertViewDemo/CXAlertViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "CXAlertViewDemo/CXAlertViewDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JL.CXAlertViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -332,10 +339,12 @@
 		8357110517E18FDF004C8155 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				DEVELOPMENT_TEAM = NVAFMDWZJC;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "CXAlertViewDemo/CXAlertViewDemo-Prefix.pch";
 				INFOPLIST_FILE = "CXAlertViewDemo/CXAlertViewDemo-Info.plist";
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
+				PRODUCT_BUNDLE_IDENTIFIER = JL.CXAlertViewDemo;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
