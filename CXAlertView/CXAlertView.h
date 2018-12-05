@@ -7,22 +7,16 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CXCustomKeyWindow.h"
 #import "CXAlertButtonItem.h"
 
-@class CXAlertView;
-typedef void(^CXAlertViewHandler)(CXAlertView *alertView);
-@interface CXAlertView : UIView
+@interface CXAlertView : CXCustomKeyWindow
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) UIView *contentView;
 @property (nonatomic, strong, readonly) NSMutableArray *buttons;
 
-@property (nonatomic, copy) CXAlertViewHandler willShowHandler;
-@property (nonatomic, copy) CXAlertViewHandler didShowHandler;
-@property (nonatomic, copy) CXAlertViewHandler willDismissHandler;
-@property (nonatomic, copy) CXAlertViewHandler didDismissHandler;
 
-@property (nonatomic, readonly, getter = isVisible) BOOL visible;
 
 @property (nonatomic, strong) UIColor *viewBackgroundColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 @property (nonatomic, strong) UIColor *titleColor NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
@@ -55,10 +49,4 @@ typedef void(^CXAlertViewHandler)(CXAlertView *alertView);
 - (void)setDefaultButtonImage:(UIImage *)defaultButtonImage forState:(UIControlState)state NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 - (void)setCancelButtonImage:(UIImage *)cancelButtonImage forState:(UIControlState)state NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 - (void)setCustomButtonImage:(UIImage *)customButtonImage forState:(UIControlState)state NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
-// AlertView action
-- (void)show;
-- (void)dismiss;
-- (void)shake;
-// Operation
-- (void)cleanAllPenddingAlert;
 @end

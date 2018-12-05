@@ -28,6 +28,8 @@
 		83E10DD517F53A5500BC5D18 /* Accelerate.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 83E10DD417F53A5500BC5D18 /* Accelerate.framework */; };
 		83E10DD717F549F400BC5D18 /* bkg2.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 83E10DD617F549F400BC5D18 /* bkg2.jpg */; };
 		A852506B18A4DC2500D85CCF /* CXBlurView.m in Sources */ = {isa = PBXBuildFile; fileRef = A852506A18A4DC2500D85CCF /* CXBlurView.m */; };
+		F44023E421B8266D009E5DE9 /* CXCustomKeyWindow.m in Sources */ = {isa = PBXBuildFile; fileRef = F44023E321B8266D009E5DE9 /* CXCustomKeyWindow.m */; };
+		F44023E721B82806009E5DE9 /* CusKeyWindowRootViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = F44023E621B82806009E5DE9 /* CusKeyWindowRootViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -62,6 +64,10 @@
 		83E10DD617F549F400BC5D18 /* bkg2.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = bkg2.jpg; sourceTree = "<group>"; };
 		A852506918A4DC2500D85CCF /* CXBlurView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CXBlurView.h; sourceTree = "<group>"; };
 		A852506A18A4DC2500D85CCF /* CXBlurView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CXBlurView.m; sourceTree = "<group>"; };
+		F44023E221B8266D009E5DE9 /* CXCustomKeyWindow.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CXCustomKeyWindow.h; sourceTree = "<group>"; };
+		F44023E321B8266D009E5DE9 /* CXCustomKeyWindow.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CXCustomKeyWindow.m; sourceTree = "<group>"; };
+		F44023E521B82806009E5DE9 /* CusKeyWindowRootViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CusKeyWindowRootViewController.h; sourceTree = "<group>"; };
+		F44023E621B82806009E5DE9 /* CusKeyWindowRootViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CusKeyWindowRootViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -151,6 +157,10 @@
 				83B3A84317E9B18D001BCBC6 /* CXAlertViewController.m */,
 				8357110717E1917D004C8155 /* CXAlertView.h */,
 				8357110817E1917D004C8155 /* CXAlertView.m */,
+				F44023E221B8266D009E5DE9 /* CXCustomKeyWindow.h */,
+				F44023E321B8266D009E5DE9 /* CXCustomKeyWindow.m */,
+				F44023E521B82806009E5DE9 /* CusKeyWindowRootViewController.h */,
+				F44023E621B82806009E5DE9 /* CusKeyWindowRootViewController.m */,
 				A852506918A4DC2500D85CCF /* CXBlurView.h */,
 				A852506A18A4DC2500D85CCF /* CXBlurView.m */,
 			);
@@ -233,8 +243,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F44023E421B8266D009E5DE9 /* CXCustomKeyWindow.m in Sources */,
 				A852506B18A4DC2500D85CCF /* CXBlurView.m in Sources */,
 				835710F017E18FDF004C8155 /* main.m in Sources */,
+				F44023E721B82806009E5DE9 /* CusKeyWindowRootViewController.m in Sources */,
 				835710F417E18FDF004C8155 /* CXAppDelegate.m in Sources */,
 				835710FD17E18FDF004C8155 /* CXViewController.m in Sources */,
 				8357110917E1917D004C8155 /* CXAlertView.m in Sources */,
