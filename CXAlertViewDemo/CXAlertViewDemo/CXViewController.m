@@ -107,7 +107,7 @@
                           }];
     
     // Remember to call this, or alertview will never be seen.
-    [alertView show];
+//    [alertView show];
 }
 
 - (BOOL)prefersStatusBarHidden

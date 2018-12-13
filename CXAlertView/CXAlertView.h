@@ -7,10 +7,10 @@
 //
 
 #import <UIKit/UIKit.h>
-#import "CXCustomKeyWindow.h"
+#import "CustomKeyWindow.h"
 #import "CXAlertButtonItem.h"
 
-@interface CXAlertView : CXCustomKeyWindow
+@interface CXAlertView : CustomKeyWindow
 
 @property (nonatomic, copy) NSString *title;
 @property (nonatomic, copy) UIView *contentView;
@@ -49,4 +49,5 @@
 - (void)setDefaultButtonImage:(UIImage *)defaultButtonImage forState:(UIControlState)state NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 - (void)setCancelButtonImage:(UIImage *)cancelButtonImage forState:(UIControlState)state NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
 - (void)setCustomButtonImage:(UIImage *)customButtonImage forState:(UIControlState)state NS_AVAILABLE_IOS(5_0) UI_APPEARANCE_SELECTOR;
+- (void)setup;
 @end

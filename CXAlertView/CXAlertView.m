@@ -65,7 +65,6 @@ static CGFloat const kDefaultBottomScrollViewHeight = 44.;
 - (CGFloat)heightForContentScrollView;
 - (CGFloat)heightForBottomScrollView;
 //
-- (void)setup;
 - (void)tearDown;
 - (void)validateLayout;
 - (void)invalidateLayout;
@@ -270,9 +269,14 @@ static CGFloat const kDefaultBottomScrollViewHeight = 44.;
     [self updateBottomScrollView];
 }
 
-- (void)tearDown
+- (CusKeyWindowRootViewController *)getKeyWindowRootViewController
 {
-    [super tearDown];
+    return [[CXAlertViewController alloc] initWithCustomKeyWindow:self];
+}
+
+- (void)windowDidDisappear
+{
+    [super windowDidDisappear];
     [self.containerView removeFromSuperview];
     [self.blurView removeFromSuperview];
 

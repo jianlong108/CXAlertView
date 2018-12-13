@@ -8,11 +8,12 @@
 
 #import <UIKit/UIKit.h>
 #import "CXAlertView.h"
+#import "CusKeyWindowRootViewController.h"
 
-@interface CXAlertViewController : UIViewController
+@interface CXAlertViewController : CusKeyWindowRootViewController
 
-@property (nonatomic, strong) CXAlertView *alertView;
+//@property (nonatomic, readonly) CXAlertView *alertView;
 
-@property (nonatomic, assign) BOOL rootViewControllerPrefersStatusBarHidden;
+//@property (nonatomic, assign) BOOL rootViewControllerPrefersStatusBarHidden;
 
 @end
